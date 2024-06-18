@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "wremena";
+    src: url(WremenaRegular1.10.woff);
+}
+
+@font-face {
+    font-family: "scopic";
+    src: url(ScopicDisplay-Regular.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+  body{
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+}
+
+#navbar{
+    width: calc(100vw - 30px);
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
+
+#footernavbar{
+    width: calc(100vw - 33px);
+    mix-blend-mode: difference;
+    position: static;
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
+
+#navbarnameonly{
+    width: 200px;
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+}
+
+
+
+#leftnav{
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#rightnav{
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#footernavbar #rightnav span{
+    margin:0;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+#navbar  a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar  a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+#footernavbar  a{
+    text-decoration: none;
+    color: white;
+}
+
+#name{
+    width: 10vw;
+    font-size: 1.2em;
+}
+
+#indexlist{
+    width:20vw;
+}
+
+#indexlist > ul{
+    list-style-type: upper-roman;
+    /*list-style-type: none; */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+#brief{
+    width: 30vw;
+    display: flex;
+}
+
+#brief .abouttext{
+    width: 30vw;
+    display: flex;
+}
+
+#brief::before {
+    content: "→\00a0  ";
+  }
+
+#footernavbar  #brief::before {
+    content: "→\00a0  ";
+    opacity: 0;
+  }
+
+#fakebrief{
+    width: 15vw;
+}
+
+#aboutcont{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#footernavbar #aboutcont{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+#about{
+    width: auto;
+    margin-right: 15px;
+}
+
+#about > ul {
+    list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.fullimgcont{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.doubleimgcont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.doubleimgcont > div {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.fullimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.coverimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.coverimgcont{
+    height: 100vh;
+    width: 100%;
+}
+
+.doubleimg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.mediumimgcont{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.mediumimg{
+    z-index: 3;
+    width: 100%;
+}
+
+.mediumimgcont p {
+    left: 0;
+    font-size: 0.7em;
+    font-style: italic;
+    line-height: 1.1;
+    text-align: left;
+    align-self: flex-start;
+    width: 50%;
+    min-width: 200px;
+    opacity: 0.7;
+}
+
+.blackblock{
+    height: 50vh;
+    width: 100%;
+}
+
+.textblock{
+    height: auto;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textblock p {
+    font-size: 0.95em;
+    column-count: 2;
+    max-width: 80vw;
+    min-width: 50vw;
+}
+
+.bigtext{
+    width: 65%;
+    margin: auto;
+}
+
+.bigtext > span {
+    font-size: 3.9em;
+    line-height: 1;
+    font-family: "wremena", Georgia, serif;
+    text-wrap:wrap;
+}
+
+#indexbody{
+    margin-top: 15px;
+    width: 78%;
+    margin-left: 250px;
+    line-height: 1.1;
+    font-size: 0.9em;
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+}
+
+.row > img {
+    object-fit: scale-down;
+}
+
+#onsighttext{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileabout{
+    display: none;
+}
+
+.coveranimation{
+    animation: mymove 5s steps(1, end) infinite;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes mymove {
+  1% {background-image: url("img/etica_0002_Layer-3-min.png");}
+  24% {background-image: url("img/etica_0002_Layer-3-min.png");}
+  25% {background-image: url("img/etica_0004_Layer-1-min.png");}
+  49% {background-image: url("img/etica_0004_Layer-1-min.png");}
+  50% {background-image: url("img/etica_0003_Layer-2-min.png");}
+  74% {background-image: url("img/etica_0003_Layer-2-min.png");}
+  75% {background-image: url("img/etica_0001_Layer-4-min.png");}
+  99% {background-image: url("img/etica_0001_Layer-4-min.png");}
+  100% {background-image: url("img/etica_0002_Layer-3-min.png");}
+}
+
+.typedisplaycont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.typedisplay{
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.typedisplay > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: scopic;
+    font-size: 7vw;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    color: rgb(78, 78, 78);
+    transition: 0.2s;
+}
+
+.typedisplay > div:hover{
+    color: rgb(255, 218, 149);
+    text-shadow: 0 0 5px #ff7700, 0 0 10px #ff6600, 0 0 30px #ff6600;
+}
+
+.fichatec {
+    height: auto;
+}
+
+.fichatec > #rightnav {
+    min-height: 30vh;
+}
+
+.fichatec > #rightnav > #brief {
+    width: auto;
+}
+
+.fichatec > #rightnav > #brief::before {
+    content: "→\00a0 ";
+    opacity: 1;
+
+}
+
+.fichatec > #rightnav #brief span{
+    align-self: flex-start;
+}
+

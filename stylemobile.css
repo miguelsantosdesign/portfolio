@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "wremena";
+    src: url(WremenaRegular1.10.woff);
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+  body{
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+}
+
+#navbar{
+    width: calc(100vw - 30px);
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
+
+#footernavbar{
+    width: calc(100vw - 33px);
+    mix-blend-mode: difference;
+    position: static;
+    z-index: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+    margin: 0;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
+
+#navbarnameonly{
+    width: 200px;
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+}
+
+#fakenavbar{
+    width: calc(100vw - 50px);
+    z-index: 2;
+    display: flex;
+    padding: 15px;
+    line-height: 1.1;
+    justify-content: space-between;
+    font-size: 0.95em;
+}
+
+#leftnav{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#rightnav{
+    width: 50%;
+    justify-content: space-between;
+    display: none;
+}
+
+#footernavbar #rightnav{
+    display: flex;
+    align-items: flex-end;
+    width: 60vw;
+}
+
+#footernavbar #leftnav{
+    display: none;
+}
+
+#footernavbar #rightnav span{
+    margin:0;
+    bottom: 0;
+    align-self: flex-end;
+    display: flex;
+}
+
+#footernavbar  a{
+    text-decoration: none;
+    color: white;
+}
+
+#name{
+    width: 25vw;
+    font-size: 1.2em;
+}
+
+#indexlist{
+    width:40vw;
+    padding-right: 15px;
+}
+
+#indexlist > ul{
+    list-style-type: upper-roman;
+    /*list-style-type: none; */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+#navbar li:hover{
+    text-decoration: underline;
+}
+
+#brief{
+    width: 30vw;
+    display: flex;
+    text-wrap: nowrap;
+}
+
+#footernav #brief{
+    width: 40vw;
+    min-width: 300px;
+    display: flex;
+}
+
+#fakebrief{
+    width: 15vw;
+}
+
+#aboutcont{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#footernavbar #aboutcont{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+#about{
+    width: auto;
+    margin-right: 15px;
+}
+
+#about > ul {
+    list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.fullimgcont{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.doubleimgcont{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.doubleimgcont > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.fullimg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.coverimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.coverimgcont{
+    height: 100vh;
+    width: 100%;
+}
+
+.doubleimg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.mediumimgcont{
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.mediumimg{
+    z-index: 3;
+    width: 100%;
+}
+
+.mediumimgcont p {
+    left: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 1.1;
+    text-align: left;
+    align-self: flex-start;
+    width: 50%;
+    min-width: 200px;
+    opacity: 0.7;
+}
+
+.blackblock{
+    height: 100vh;
+    width: 100%;
+}
+
+.textblock{
+    height: auto;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textblock p {
+    font-size: 0.95em;
+    column-count: 1;
+    max-width: 80vw;
+    min-width: 50vw;
+}
+
+.bigtext{
+    width: 80%;
+    margin: auto;
+}
+
+.bigtext > span {
+    font-size: 2em;
+    line-height: 1;
+    font-family: "wremena", Georgia, serif;
+    text-wrap:wrap;
+}
+
+#indexbody{
+    margin-top: 15px;
+    width: 78%;
+    margin-left: 250px;
+    line-height: 1.1;
+    font-size: 0.9em;
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
+    height: 100px;
+}
+
+.row > img {
+    object-fit: scale-down;
+}
+
+#onsighttext{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileabout{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    z-index: 4;
+    mix-blend-mode: difference;
+}
+
+.mobileabout #aboutcont{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+}
+
+.mobileabout #about{
+    width: auto;
+    margin-right: 15px;
+    
+}
+
+.mobileabout > #aboutcont > #about > ul {
+    list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  
+}
+
+.mobileabout  a{
+    text-decoration: none;
+    color: white;
+}
+
+.coveranimation{
+    background-repeat: space;
+}
+
+.typedisplaycont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.typedisplay{
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.typedisplay > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: scopic;
+    font-size: 15vw;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+    color: white;
+}
