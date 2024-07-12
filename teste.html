@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de design Miguel Santos - Oeiras, Portugal">
+    <title>Miguel Santos Design</title>
+    <link href="img/me_light.ico" rel="icon" media="(prefers-color-scheme: light)"/>
+    <link href="img/me.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 700px)" href="stylemobile.css">
-    <title>Miguel Santos Design</title>
+   
 </head>
-<body>
+<body onload="startTime()">
+    <div class="progress"></div>
     <div id="navbar">
     <div id="leftnav">
         <div id="name">
@@ -18,19 +23,17 @@
             <ul>
                 <a href="hang.html"><li>Hendrick's & Gao Hang</li></a>
                 <a href="icarus.html"><li>Icarus Kite (1)</li></a>
-                <li>Culto do Encoberto</li>
                 <a href="impulso.html"><li>Festival Impulso 2024</li></a>
                 <li>Korp Mono</li>
-                <li>Scopic Display</li>
+                <a href="scopic.html"><li>Scopic Display</li></a>
                 <li>Abaladiça</li>
-                <li>Guia Digital Estudantil</li>
                 <a href="etica.html"><li>Ética e Design - Mário Moura</li></a>
             </ul>
         </div>
     </div>
     <div id="rightnav">
         <div id="brief">
-            <span>Na procura de tornar o "kiting" profissional um hobby menos dispendioso, nasce o projeto Icarus com o seu primeiro produto "Kite Prototype 1". Um objeto que marca pela sua transparência no design, minimalismo, modularidade e baixo custo.</span> 
+            <span></span> 
         </div>
         <div id="aboutcont">
             <div id="about">
@@ -55,62 +58,232 @@
             </div>
         </div>
     </div>
-    
-    <div class="coverimgcont" id="pagetop">
-        <img class="coverimg" src="img/kite_main.jpg">
-    </div>
-    <div class="textblock">
-        <div class="bigtext">
-            <span>O mais importante era transmitir a ideia de transparência, uma filosofia de <i>"what you see is what you get"</i>. Mostrar o material foi um objetivo essencial.</span>
-            <br>
-            <br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+    <section id="icaruscont">
+        <div id="footernavbar" class="fichatec firstbrief">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        Scopic é uma fonte que surge das brincadeiras de criança que fazia com calculadoras científicas. Desde do momento em que manuseamos este objeto, vemo-nos arrastados para a tentativa de escrever através de números. A scopic é uma solução para apresentar o alfabeto latino num formato segmentado e funcional.
+                    </span> 
+                </div>
+            </div>
         </div>
+            <div class="coverimgcont" id="pagetop" style="position:absolute; top:0;">
+                <img class="coverimg" src="img/kite_main.jpg">
+            </div>
+
+            <div class="mediumimgcont" data-aos="fade-up"  style="width: calc(100vw - 40vw); margin-top: 100vh;">
+                <img class="mediumimg"  src="img/kite_graphics.png">
+            </div>
+            <div class="doubleimgcont" data-aos="fade-up">
+                <div><img class="doubleimg" src="img/_DSC5313.jpg"></div>
+                <div><img class="doubleimg" src="img/_DSC5308.jpg"></div>
+            </div>
+            <div class="fullimgcont">
+                <img class="fullimg" src="img/_DSC5298.jpg">
+            </div>
+            <div class="mediumimgcont" data-aos="fade-up" style="width:50vw;">
+                <img class="mediumimg" src="img/_DSC5305.jpg">
+            </div>
+    </section>
+            
+<section id="korpcont" style="padding-bottom: 20vh;">
+            <div id="footernavbar" class="fichatec">
+                <div id="leftnav">
+                    <div id="name"></div>
+                    <div id="indexlist"></div>
+                </div>
+                <div id="rightnav">
+                    <div id="brief">
+                        <span>
+                            Scopic é uma fonte que surge das brincadeiras de criança que fazia com calculadoras científicas. Desde do momento em que manuseamos este objeto, vemo-nos arrastados para a tentativa de escrever através de números. A scopic é uma solução para apresentar o alfabeto latino num formato segmentado e funcional.
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="coverimgcont" id="pagetop" style="align-content: center; display: flex; align-items: flex-end; justify-content: center;">
+                <div id="txt2" style="position: absolute; text-align: left; font-size:10vw; font-family: korpmono, 'Courier New', Courier, monospace; color: white;">Korp Mono&copy;<br>
+                    <input class="FakeTextArea" maxlength="10" spellcheck="false" placeholder="try me!"/></div>
+                </div>
+            </div>
+        
+            <div class="fullimgcont" data-aos="fade-up">
+                <img class="fullimg" src="img/keyboard.jpg">
+            </div>
+        
+            <div style="width: 12ch; line-height: 95%; height:auto; margin-left: auto; margin-right: auto; margin-bottom: 30vh; text-align: left; font-family: korpmono; font-size: 10vw;">
+                <span id="pais"></span><br>
+                <span id="terra"></span><br>
+                <span style="float: right;" id="coord"></span>
+            </div>
+
+        </section>
+
+
+        <section id="scopiccont">
+            <div id="footernavbar" class="fichatec">
+                <div id="leftnav">
+                    <div id="name"></div>
+                    <div id="indexlist"></div>
+                </div>
+                <div id="rightnav">
+                    <div id="brief">
+                        <span>
+                            Scopic é uma fonte que surge das brincadeiras de criança que fazia com calculadoras científicas. Desde do momento em que manuseamos este objeto, vemo-nos arrastados para a tentativa de escrever através de números. A scopic é uma solução para apresentar o alfabeto latino num formato segmentado e funcional.
+                        </span> 
+                    </div>
+                </div>
+            </div>            
+<div  class="coverimgcont" id="pagetop" style="letter-spacing: -1vw;align-content: center; display: flex; align-items: flex-end; justify-content: center;">
+        <div id="txt" style="transform: skewX(-10deg); position: absolute; text-align: center; font-size:20vw; font-family: scopic, 'Courier New', Courier, monospace; color: rgb(255, 218, 149); text-shadow: 0 0 5px #ff7700, 0 0 10px #ff6600, 0 0 30px #ff6600;"></div>
+        <div id="txt" style="transform: skewX(-10deg); position: absolute; z-index: -2; text-align: center; font-size:20vw; font-family: scopic, 'Courier New', Courier, monospace; background: rgb(119,119,119); background: linear-gradient(346deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 35%, rgba(60,60,60,1) 100%); background-clip: text; -webkit-text-fill-color: transparent;">##:##:##</div>            
+                    <script>
+                    function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    h = checkTime(h);
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                    }
+
+                    function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                    }
+                    </script>
     </div>
-    <div class="mediumimgcont" style="width: calc(100vw - 40vw);">
-        <img class="mediumimg" src="img/kite_graphics.png">
-        <p>Planificação do packaging</p>
+    
+    <div class="typedisplaycont">
+    <div class="typedisplay">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div>
+        <div>P</div>
+        <div>Q</div>
+        <div>R</div>
+        <div>S</div>
+        <div>T</div>
+        <div>U</div>
+        <div>V</div>
+        <div>W</div>
+        <div>X</div>
+        <div>Y</div>
+        <div>Z</div>
     </div>
-    <div class="doubleimgcont">
-        <div><img class="doubleimg" src="img/_DSC5313.jpg"></div>
-        <div><img class="doubleimg" src="img/_DSC5308.jpg"></div>
     </div>
-    <div class="fullimgcont">
-        <img class="fullimg" src="img/_DSC5298.jpg">
-    </div>
-    <div class="mediumimgcont" style="width:50vw;">
-        <img class="mediumimg" src="img/_DSC5305.jpg">
-    </div>
-    <div class="mediumimgcont" style="width:20vw;">
-        <img class="mediumimg" src="https://www.shutterstock.com/image-vector/circle-center-point-black-contour-260nw-1063069964.jpg">
-    </div>
-    <div class="blackblock">
+    <br>
+    <br>
+    <div class="typedisplay">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>+</div>
+        <div>-</div>
+        <div>(</div>
+        <div>)</div>
+        <div>*</div>
     </div>
 
+    </section>
+
+
+
+    <section id="impulsocont">
+        <div id="footernavbar" class="fichatec">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        A identidade de raiz do festival impulso foi um projeto colaborativo com <u>Luana Pascoal</u> e <u>João Dias</u>, a proposta explora o azul elétrico vibrante para dar cor ao evento. Técnicas de rotoscopia 3D foram também empregadas, resultando numa mancha quase abstrata dos mais variados objetos que, na sua totalidade, representam a diversidade do festival.
+                    </span> 
+                </div>
+            </div>
+        </div>
+    <div class="coverimgcont" id="pagetop">
+        <img class="coverimg" src="img/impulso_cover.png">
+    </div>
+    
+    <div class="mediumimgcont" data-aos="fade-up" style="width: calc(100vw - 40vw);">
+        <video src="img/impulso_video.mp4" class="mediumimg" loop autoplay playsinline preload="auto" style="pointer-events: none;"></video>
+    </div>
+    <div class="doubleimgcont" data-aos="fade-up">
+        <div><img class="doubleimg" src="img/impulso_texture.jpg"></div>
+        <div style="z-index: -1;"><video src="img/impulso_flyer.mp4" class="mediumimg" loop autoplay playsinline preload="auto" style="object-fit: cover; pointer-events: none;"></video></div>
+    </div>
+    <div class="fullimgcont">
+        <img class="fullimg" src="img/impulso_cred.jpg">
+    </div>
+    <div class="mediumimgcont" data-aos="fade-up" style="width:50vw;">
+        <img class="mediumimg" src="img/impulso_sinaletica.png">
+    </div>
+    </section>
+
+
+    <section id="hangcont">
+        <div id="footernavbar" class="fichatec">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        Um dos grandes nomes da indústria do Gin alia-se ao artista emergente chinês Gao Hang para criar uma nova abordagem visual. Uma nova imagem que se caracteriza pelas formas facetadas, texturas borradas e cores berrantes dos primórdios da era digital.
+                    </span> 
+                </div>
+            </div>
+        </div>
     <div class="coverimgcont" id="pagetop">
         <img class="coverimg" src="img/hang_cover_final.jpg">
     </div>
-    <div class="textblock" style="background-color: #FFF;">
-        <div class="bigtext" style="color: black;">
-            <span>O mais importante era transmitir a ideia de transparência, uma filosofia de <i>"what you see is what you get"</i>. Mostrar o material foi um objetivo essencial.</span>
-            <br>
-            <br>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-        </div>
-    </div>
-    <div class="mediumimgcont" style="width: calc(100vw - 40vw);">
+    
+    <div class="mediumimgcont" data-aos="fade-up" style="width: calc(100vw - 40vw);">
         <img class="mediumimg" src="img/hang_bottle.png">
     </div>
-    <div class="mediumimgcont" style="width: 100%;">
+    <div class="mediumimgcont" data-aos="fade-up"  style="width: 100%;">
         <img class="mediumimg" src="img/hang_pack2.png">
     </div>
-    <div class="fullimgcont">
+    <div class="fullimgcont" data-aos="fade-up">
         <img class="fullimg" src="img/hang_rotulo.jpg">
     </div>
-    <div class="fullimgcont">
+    <div class="fullimgcont" data-aos="fade-up">
         <img class="fullimg" src="img/hang_pack.jpg">
     </div>
-    <div class="blackblock"></div>
+    </section>
+
+
+
 
 
     <div id="footernavbar">
@@ -123,7 +296,7 @@
         <div id="rightnav">
             <div id="brief">
                 <span>
-                    &copy; Miguel Santos 2024<br>Oeiras, Portugal
+                    &copy; Miguel Santos 2024<br>Oeiras, Portugal<br>+351 960 216 153
                 </span> 
             </div>
             <div id="aboutcont">
@@ -134,6 +307,12 @@
             </div>
         </div>
 
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+            }, false);
+        </script>
 </body>
 </html>
