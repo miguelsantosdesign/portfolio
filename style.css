@@ -11,6 +11,11 @@
     src: url(ScopicDisplay-Regular.otf);
 }
 
+
+@font-face {
+    font-family: "korpmono";
+    src: url(Korpmono.ttf);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -22,6 +27,10 @@ html{
     margin: 0;
     padding: 0;
     text-wrap: balance;
+}
+
+a{
+    cursor: crosshair;
 }
 
 #navbar{
@@ -41,7 +50,6 @@ html{
 #footernavbar{
     width: calc(100vw - 33px);
     mix-blend-mode: difference;
-    position: static;
     z-index: 2;
     display: flex;
     padding: 15px;
@@ -49,7 +57,6 @@ html{
     line-height: 1.1;
     justify-content: space-between;
     font-size: 0.95em;
-    bottom: 0;
     overflow-x: hidden;
     padding-right: 0px;
 }
@@ -107,12 +114,23 @@ html{
     font-size: 1.2em;
 }
 
+#name > .logo:hover {
+    perspective: 12px;
+    transform: rotateY(45deg);
+	animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
 #indexlist{
     width:20vw;
 }
 
 #indexlist > ul{
-    list-style-type: upper-roman;
+    list-style-type:disc;
     /*list-style-type: none; */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
@@ -128,9 +146,13 @@ html{
     display: flex;
 }
 
-#brief::before {
+#footernavbar #brief::before {
     content: "→\00a0  ";
   }
+
+.bigtext::before {
+    display: none;
+}
 
 #footernavbar  #brief::before {
     content: "→\00a0  ";
@@ -174,7 +196,7 @@ html{
 }
 
 .doubleimgcont{
-    height: 100vh;
+    height: calc(100vw/2);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -251,7 +273,7 @@ html{
     height: auto;
     padding-top: 12vh;
     padding-bottom: 12vh;
-    width: 100%;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,22 +334,10 @@ html{
 }
 
 .coveranimation{
-    animation: mymove 5s steps(1, end) infinite;
+    background-image: url("img/eticagif.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-@keyframes mymove {
-  1% {background-image: url("img/etica_0002_Layer-3-min.png");}
-  24% {background-image: url("img/etica_0002_Layer-3-min.png");}
-  25% {background-image: url("img/etica_0004_Layer-1-min.png");}
-  49% {background-image: url("img/etica_0004_Layer-1-min.png");}
-  50% {background-image: url("img/etica_0003_Layer-2-min.png");}
-  74% {background-image: url("img/etica_0003_Layer-2-min.png");}
-  75% {background-image: url("img/etica_0001_Layer-4-min.png");}
-  99% {background-image: url("img/etica_0001_Layer-4-min.png");}
-  100% {background-image: url("img/etica_0002_Layer-3-min.png");}
 }
 
 .typedisplaycont{
@@ -355,25 +365,28 @@ html{
     width: 10vw;
     height: 10vw;
     text-align: center;
-    color: rgb(78, 78, 78);
+    color:rgba(38, 38, 38, 0.711);
     transition: 0.2s;
 }
 
 .typedisplay > div:hover{
     color: rgb(255, 218, 149);
     text-shadow: 0 0 5px #ff7700, 0 0 10px #ff6600, 0 0 30px #ff6600;
+    cursor: crosshair;
 }
 
 .fichatec {
     height: auto;
+    position: sticky;
+    top: 0;
 }
 
 .fichatec > #rightnav {
-    min-height: 30vh;
+    min-height: auto;
 }
 
 .fichatec > #rightnav > #brief {
-    width: auto;
+    width: 30vw;
 }
 
 .fichatec > #rightnav > #brief::before {
@@ -381,6 +394,151 @@ html{
     opacity: 1;
 
 }
+
+.fichatec > #rightnav #brief span{
+    align-self: flex-start;
+}
+
+
+.FakeTextArea{
+    border: 3px solid grey;
+    border-radius: 10px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+    width: 90vw;
+    height: -10%;
+    background-color: black;
+    color: white;
+    font-size:19vw;
+    font-family: korpmono;
+    resize: none;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-align: center;
+    outline: none;
+    white-space: nowrap;
+    letter-spacing: -1vw;
+}
+
+#pais::before {
+    text-align: center;
+    content: "Portugal";
+    animation: pais linear 10s  infinite ;
+    color: white;
+  }
+  
+  @keyframes pais {
+    0% {
+      content: "Portugal";
+    }
+    25% {
+      content: "Sweden";
+    }
+    50% {
+      content: "Germany";
+    }
+    75% {
+      content: "Croatia";
+    }
+    100% {
+      content: "Iceland";
+    }
+  }
+
+  #terra::before {
+    text-align: center;
+    content: "oeiras";
+    animation: terra 10s linear infinite ;
+    color: white;
+  }
+  
+  @keyframes terra {
+    0% {
+      content: "Oeiras";
+    }
+    25% {
+      content: "Umeå";
+    }
+    50% {
+      content: "Königswinter";
+    }
+    75% {
+      content: "Špičkovina";
+    }
+    100% {
+      content: "Ísafjörður";
+    }
+  }
+
+  #coord::before {
+    content: "oeiras";
+    animation: pop 10s linear infinite ;
+    color: white;
+  }
+  
+  @keyframes pop {
+    0% {
+      content: "171,767";
+    }
+    25% {
+      content: "88,395";
+    }
+    50% {
+      content: "40,625";
+    }
+    75% {
+      content: "741";
+    }
+    100% {
+      content: "2,571";
+    }
+  }
+
+
+
+#korpcont{
+    width: auto;
+    height: auto;
+}
+
+section{
+    padding-bottom: 20vh;
+}
+
+
+
+
+
+
+.progress {
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+    z-index: 3;
+  }
+  @keyframes progress {
+    to {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+    }
+  }
+
+  :root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
 
 .fichatec > #rightnav #brief span{
     align-self: flex-start;
