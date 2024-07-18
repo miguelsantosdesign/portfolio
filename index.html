@@ -1,57 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de design Miguel Santos - Oeiras, Portugal">
+    <title>Miguel Santos Design</title>
+    <link href="img/me_light.ico" rel="icon" media="(prefers-color-scheme: light)"/>
+    <link href="img/me.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Index</title>
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="stylemobile.css">
+   
 </head>
-<body>
-    <div id="navbarnameonly">
+<body onload="startTime()">
+    <div class="progress"></div>
+    <div id="navbar">
+    <div id="leftnav" >
         <div id="name">
-            Miguel Santos <br> Designer <br> Gráfico <br> <img src="img/me.svg" style="height: 40px; margin-top: 5px;">
+            Miguel Santos <br> Designer <br> Gráfico <br> <img class="logo" src="img/me.svg" style="height: 40px; margin-top: 5px;">
+        </div>
+        <div id="indexlist">
+            <ul>
+                <a href="#icaruscont"><li>Icarus Kite &#10112; <code>(2023)</code></li></a>
+                <a href="#korpcont"><li>Korp Mono <code>(2024)</code></li></a>
+                <a href="#eticacont"><li>Ética e Design <code>(2024)</code></li></a>
+                <a href="#scopiccont"><li>Scopic Display <code>(2024)</code></li></a>
+                <a href="#impulsocont"><li>Festival Impulso <code>(2024)</code></li></a>
+                <a href="#hangcont"><li>Hendrick's & Gao Hang <code>(2023)</code></li></a>
+                <a href="#abalcont"><li>Abaladiça ESAD.cr <code>(2024)</code></li></a>
+                
+            </ul>
         </div>
     </div>
-    <div id="fakenavbar">
-        <div id="indexbody">
-            <table>
-                <tr>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Branding</td>
-                    <td>2024</td>
-                    <td><img src="img/Folder.jpg"></td>
-                </tr>
-                <tr>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Branding</td>
-                    <td>2024</td>
-                    <td><img src="img/Folder.jpg"></td>
-                </tr>
-                <tr>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Branding</td>
-                    <td>2024</td>
-                    <td><img src="img/Folder.jpg"></td>
-                </tr>
-                <tr>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Branding</td>
-                    <td>2024</td>
-                    <td><img src="img/Folder.jpg"></td>
-                </tr>
-                <tr>
-                    <td>Firstname</td>
-                    <td>Lastname</td>
-                    <td>Branding</td>
-                    <td>2024</td>
-                    <td><img src="img/Folder.jpg"></td>
-                </tr>
-            </table>
+    <div id="rightnav">
+        <div id="brief">
+            <span></span> 
+        </div>
+        <div id="aboutcont">
+            <div id="about">
+                <ul>
+<!--                    <li><a href="index.html">Index</a></li>
+                    <li><a href="contact.html">Contact</a></li>           -->
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
         </div>
     </div>
+
+    <div class="mobileabout">
+        <div id="aboutcont">
+            <div id="about">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Index</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="icaruscont">
+        <div id="footernavbar" class="fichatec firstbrief">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        Na procura de tornar o "kiting" profissional um hobby menos dispendioso, nasce o projeto Icarus com o seu primeiro produto "Kite Prototype &#10112;". Um objeto que marca pela sua transparência no design, minimalismo, modularidade e baixo custo.
+                    </span> 
+                </div>
+            </div>
+        </div>
+            <div class="coverimgcont" id="pagetop" style="position:absolute; top:0;">
+                <img class="coverimg" src="img/kite_main.jpg">
+            </div>
+
+            <div class="mediumimgcont" data-aos="fade-up"  style="width: calc(100vw - 40vw); margin-top: 100vh;">
+                <img class="mediumimg"  src="img/kite_graphics.png">
+            </div>
+            <div class="doubleimgcont" data-aos="fade-up">
+                <div><img class="doubleimg" src="img/_DSC5313.jpg"></div>
+                <div><img class="doubleimg" src="img/_DSC5308.jpg"></div>
+            </div>
+            <div class="fullimgcont">
+                <img class="fullimg" src="img/_DSC5298.jpg">
+            </div>
+            <div class="mediumimgcont" data-aos="fade-up" style="width:50vw;">
+                <img class="mediumimg" src="img/_DSC5305.jpg">
+            </div>
+    </section>
+            
+<section id="korpcont" style="padding-bottom: 20vh;">
+            <div id="footernavbar" class="fichatec">
+                <div id="leftnav">
+                    <div id="name"></div>
+                    <div id="indexlist"></div>
+                </div>
+                <div id="rightnav">
+                    <div id="brief">
+                        <span>
+                            Korp Mono nasce de um amor inexplicável pela ordem, clareza e estandardização de blocos de texto. Foi o resultado de uma longa pesquisa e catalogação de outros tipos monospaced, com o objetivo de criar algo funcionalista e contemporâneo ao mesmo tempo.
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="coverimgcont" id="pagetop" style="align-content: center; display: flex; align-items: flex-end; justify-content: center;">
+                <div style="position: absolute; text-align: left; font-size:10vw; font-family: korpmono, 'Courier New', Courier, monospace; color: white;">Korp Mono&copy;<br>
+                </div>
+            </div>
+        
+            <div class="fullimgcont" data-aos="fade-up">
+                <img class="fullimg" src="img/keyboard.jpg">
+            </div>
+        
+            <div style=" width: 10ch; line-height: 95%; height:auto; margin-left: auto; margin-right: auto; margin-bottom: 30vh; text-align: left; font-family: korpmono; font-size: 14vw;">
+                <span id="pais"></span><br>
+                <span id="terra"></span><br>
+                <span style="float: right;" id="coord"></span>
+                <input class="FakeTextArea" maxlength="10" spellcheck="false" placeholder="try me!"/></div>
+            </div>
+
+        </section>
+        <section id="eticacont" >
+            <div id="footernavbar" class="fichatec">
+                <div id="leftnav">
+                    <div id="name"></div>
+                    <div id="indexlist"></div>
+                </div>
+                <div id="rightnav">
+                    <div id="brief">
+                        <span>
+                            Uma pequena monografia, em colaboração com <u>Ana Casimiro</u> e <u>Kristóf Reis</u>, contendo uma extensa entrevista de oito perguntas selecionadas a Mário Moura acerca do papel do designer como ser ético.
+                        </span> 
+                    </div>
+                </div>
+            </div>
+        <div class="coverimgcont" id="pagetop">
+            <div class="coverimg coveranimation"></div>
+        </div>
+
+        </section>
+
+
+        <section id="scopiccont">
+            <div id="footernavbar" class="fichatec">
+                <div id="leftnav">
+                    <div id="name"></div>
+                    <div id="indexlist"></div>
+                </div>
+                <div id="rightnav">
+                    <div id="brief">
+                        <span>
+                            Scopic é uma fonte que surge das brincadeiras de criança que fazia com calculadoras científicas. Desde do momento em que manuseamos este objeto, vemo-nos arrastados para a tentativa de escrever através de números. A scopic é uma solução para apresentar o alfabeto latino num formato segmentado e funcional.
+                        </span> 
+                    </div>
+                </div>
+            </div>            
+<div  class="coverimgcont" id="pagetop" style="letter-spacing: -1vw;align-content: center; display: flex; align-items: flex-end; justify-content: center;">
+        <div id="txt" style="transform: skewX(-10deg); position: absolute; text-align: center; font-size:20vw; font-family: scopic, 'Courier New', Courier, monospace; color: rgb(255, 218, 149); text-shadow: 0 0 5px #ff7700, 0 0 10px #ff6600, 0 0 30px #ff6600;"></div>
+        <div id="txt" style="transform: skewX(-10deg); position: absolute; z-index: -2; text-align: center; font-size:20vw; font-family: scopic, 'Courier New', Courier, monospace; background: rgb(119,119,119); background: linear-gradient(346deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 35%, rgba(60,60,60,1) 100%); background-clip: text; -webkit-text-fill-color: transparent;">##:##:##</div>            
+                    <script>
+                    function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    h = checkTime(h);
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                    }
+
+                    function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                    }
+                    </script>
+    </div>
+    
+    <div class="typedisplaycont">
+    <div class="typedisplay">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div>
+        <div>P</div>
+        <div>Q</div>
+        <div>R</div>
+        <div>S</div>
+        <div>T</div>
+        <div>U</div>
+        <div>V</div>
+        <div>W</div>
+        <div>X</div>
+        <div>Y</div>
+        <div>Z</div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="typedisplay">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>+</div>
+        <div>-</div>
+        <div>(</div>
+        <div>)</div>
+        <div>*</div>
+    </div>
+
+    </section>
+
+
+
+    <section id="impulsocont">
+        <div id="footernavbar" class="fichatec">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        A identidade de raiz do festival impulso foi um projeto colaborativo com <u>Luana Pascoal</u> e <u>João Dias</u>, a proposta explora o azul elétrico vibrante para dar cor ao evento. Técnicas de rotoscopia 3D foram também empregadas, resultando numa mancha quase abstrata dos mais variados objetos que, na sua totalidade, representam a diversidade do festival.
+                    </span> 
+                </div>
+            </div>
+        </div>
+    <div class="coverimgcont" id="pagetop">
+        <img class="coverimg" src="img/impulso_cover.png">
+    </div>
+    
+    <div class="doubleimgcont" data-aos="fade-up">
+        <div><img class="doubleimg" src="img/impulso_texture.jpg"></div>
+        <div style="z-index: -1;"><video src="img/impulso_flyer.mp4" class="mediumimg" loop autoplay playsinline preload="auto" style="object-fit: cover; pointer-events: none;"></video></div>
+    </div>
+    <div class="mediumimgcont" data-aos="fade-up" style="width: calc(100vw - 40vw);">
+        <video src="img/impulso_video.mp4" class="mediumimg" loop autoplay playsinline preload="auto" style="pointer-events: none;"></video>
+    </div>
+    <div class="mediumimgcont" data-aos="fade-up" style="width:50vw;">
+        <img class="mediumimg" src="img/impulso_sinaletica.png">
+    </div>
+    </section>
+
+
+    <section id="hangcont">
+        <div id="footernavbar" class="fichatec">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        Um dos grandes nomes da indústria do Gin alia-se ao artista emergente chinês Gao Hang para criar uma nova abordagem visual. Uma nova imagem que se caracteriza pelas formas facetadas, texturas borradas e cores berrantes dos primórdios da era digital.
+                    </span> 
+                </div>
+            </div>
+        </div>
+    <div class="coverimgcont" id="pagetop">
+        <img class="coverimg" src="img/hang_cover_final.jpg">
+    </div>
+    
+    <div class="mediumimgcont" data-aos="fade-up" style="width: calc(100vw - 40vw);">
+        <img class="mediumimg" src="img/hang_bottle.png">
+    </div>
+    <div class="mediumimgcont" data-aos="fade-up"  style="width: 100%;">
+        <img class="mediumimg" src="img/hang_pack2.png">
+    </div>
+    <div class="fullimgcont" data-aos="fade-up">
+        <img class="fullimg" src="img/hang_rotulo.jpg">
+    </div>
+    <div class="fullimgcont" data-aos="fade-up">
+        <img class="fullimg" src="img/hang_pack.jpg">
+    </div>
+    </section>
+
+    <section id="abalcont">
+        <div id="footernavbar" class="fichatec">
+            <div id="leftnav">
+                <div id="name"></div>
+                <div id="indexlist"></div>
+            </div>
+            <div id="rightnav">
+                <div id="brief">
+                    <span>
+                        Juntamente com <u>Ana Casimiro</u> e <u>Kristóf Reis</u>, desenvolveu-se uma proposta de identidade visual para a mostra de finalistas da ESAD.cr. Abaladiça é uma expressão coloquial é o nome dado à última bebida antes de se sair de um bar e ir para casa.</span> 
+                </div>
+            </div>
+        </div>
+    <div class="coverimgcont" id="pagetop">
+        <img class="coverimg" src="img/abaladica01.jpg" style="object-fit: contain;">
+    </div>
+    
+    <div class="doubleimgcont" data-aos="fade-up">
+        <div><img class="doubleimg" src="img/peluxe_abaladica.gif"></div>
+        <div><img class="doubleimg" src="img/abaladicabw.jpg"></div>
+    </div>
+    <div class="fullimgcont" data-aos="fade-up">
+        <img class="fullimg" src="img/abaladicainsta.jpg">
+    </div>
+    <div class="fullimgcont" data-aos="fade-up">
+        <img class="fullimg" src="img/abaladicaweb.jpg">
+    </div>
+    <div class="doubleimgcont" data-aos="fade-up">
+        <div><img class="doubleimg" src="img/abaladicastickers.jpg"></div>
+        <div><img class="doubleimg" src="img/abaladica_boneco.jpg"></div>
+    </div>
+    <div class="mediumimgcont" data-aos="fade-up" style="width: 60%;">
+        <img class="mediumimg" src="img/abaladica02.jpg">
+    </div>
+    </section>
+
+
+
+
+
+    <div id="footernavbar">
+        <div id="leftnav">
+            <div id="name">
+            </div>
+            <div id="indexlist">
+            </div>
+        </div>
+        <div id="rightnav">
+            <div id="brief">
+                <span>
+                    &copy; Miguel Santos 2024<br>Oeiras, Portugal<br>+351 960 216 153
+                </span> 
+            </div>
+            <div id="aboutcont">
+                <div id="about">
+                    <a href="#pagetop"><img src="img/up.svg" style="height: 45px; margin-top: 5px;"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+            }, false);
+        </script>
 </body>
 </html>
